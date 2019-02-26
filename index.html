@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <h1>JS Issue Tracker <span><i>by Ricardo</i></span></h1>
+
+    <form>
+        <h2>Add New Issue:</h2>
+        <div>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description_text">
+        </div>
+        <div>
+            <label for="severity">Severity:</label>
+            <select id="severity" name="severity_text">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+        <div>
+            <label for="assignedTo">Assigned to:</label>
+            <input type="text" id="assignedTo" name="assignedTo_text">
+        </div>
+    </form>
+
+    <button type="submit" onclick="showInput()">Add</button>
+
+    <p id='p1'></p>
+
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
