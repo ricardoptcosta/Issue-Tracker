@@ -1,7 +1,3 @@
-/* var description = document.getElementById("description").value;
-var severity = document.getElementById("severity").value;
-var assignedTo = document.getElementById("assignedTo").value; */
-
 var elementId = 0;
 
 function showInput() {
