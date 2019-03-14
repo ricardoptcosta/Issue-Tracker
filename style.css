@@ -1,0 +1,17 @@
+form{
+    display:table;
+}
+
+form p {
+    display: table-row;
+}
+
+form p label{
+    display:table-cell;
+}
+
+#inputField{
+    display:table-cell;
+}
+
+

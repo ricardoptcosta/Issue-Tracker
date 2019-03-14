@@ -3,6 +3,7 @@
 
 <head lang="en">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -11,28 +12,27 @@
 
     <form>
         <h2>Add New Issue:</h2>
-        <div>
+        <p>
             <label for="description">Description:</label>
-            <input type="text" id="description" name="description_text">
-        </div>
-        <div>
+            <input class="inputField" type="text" id="description" name="description_text">
+        </p>
+        <p>
             <label for="severity">Severity:</label>
-            <select id="severity" name="severity_text">
+            <select class="inputField" id="severity" name="severity_text">
                 <option value="low">Low</option>
                 <option value="medium">Medium</option>
                 <option value="high">High</option>
             </select>
-        </div>
-        <div>
+        </p>
+        <p>
             <label for="assignedTo">Assigned to:</label>
-            <input type="text" id="assignedTo" name="assignedTo_text">
-        </div>
+            <input class="inputField" type="text" id="assignedTo" name="assignedTo_text">
+        </p>
     </form>
 
     <button type="submit" onclick="showInput()">Add</button>
 
     <p id='p1'></p>
-
 
     <script src="javascript.js"></script>
 </body>

@@ -6,8 +6,6 @@ function showInput() {
     var assignedTo = document.getElementById("assignedTo").value;
 
     createIssue(description, severity, assignedTo);
-
-
 }
 
 function createIssue(description, severity, assignedTo) {
