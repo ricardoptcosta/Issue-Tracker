@@ -1,14 +1,23 @@
 var elementId = 0;
 
-function showInput() {
-    var description = document.getElementById("description").value;
-    var severity = document.getElementById("severity").value;
-    var assignedTo = document.getElementById("assignedTo").value;
+var description = document.getElementById("description");
+var severity = document.getElementById("severity");
+var assignedTo = document.getElementById("assignedTo");
 
-    createIssue(description, severity, assignedTo);
+function showInput() {
+
+
+    var descriptionValue = description.value;
+    var severityValue = severity.value;
+    var assignedToValue = assignedTo.value;
+
+
+    createIssue(descriptionValue, severityValue, assignedToValue);
+
+    clearInputFields();
 }
 
-function createIssue(description, severity, assignedTo) {
+function createIssue(descriptionValue, severityValue, assignedToValue) {
     var node = document.createElement("li");
 
     node.id = elementId;
@@ -19,8 +28,8 @@ function createIssue(description, severity, assignedTo) {
     button.setAttribute('class', 'btn');
     button.innerHTML = 'Delete';
 
-    var textnode = document.createTextNode(description + " - " +
-        severity + " - " + assignedTo);
+    var textnode = document.createTextNode(descriptionValue + " - " +
+        severityValue + " - " + assignedToValue);
 
     node.appendChild(textnode);
 
@@ -29,5 +38,11 @@ function createIssue(description, severity, assignedTo) {
     button.addEventListener("click", function () {
         document.getElementById(node.id).remove();
     })
+}
+
+function clearInputFields() {
+    description.value = "";
+    severity.value = "low";
+    assignedTo.value = "";
 
 }
